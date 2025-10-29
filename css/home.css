@@ -1,0 +1,129 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Basic body styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+/* Header area */
+header {
+  background: #0066cc;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+}
+
+/* Logo */
+.logo img {
+  height: 60px;
+  width: auto;
+}
+
+/* Navigation links */
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 10px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+/* Banner image */
+
+
+/* Welcome section */
+section h1 {
+  text-align: center;
+  margin: 20px 0 10px;
+  color: #0066cc;
+}
+
+section p {
+  text-align: center;
+  margin: 0 20px 20px;
+}
+
+/* Services list */
+.menu {
+  text-align: center;
+  background: white;
+  margin: 20px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.menu h2 {
+  color: #0066cc;
+  margin-bottom: 15px;
+}
+
+.menu ol {
+  list-style-position: inside;
+}
+
+.menu li {
+  margin: 8px 0;
+  font-weight: bold;
+}
+
+/* Borehole image section */
+.bores img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Article text */
+article p {
+  text-align: center;
+  font-size: 1.2em;
+  color: #0077cc;
+  margin: 15px 0;
+}
+
+/* Footer */
+footer {
+  background: #0066cc;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+  margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav {
+    margin-top: 10px;
+  }
+
+  nav a {
+    display: block;
+    margin: 5px 0;
+  }
+
+  section p {
+    margin: 0 10px 20px;
+  }
+}

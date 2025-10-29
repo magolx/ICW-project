@@ -1,0 +1,183 @@
+/* ========== RESET STYLES ========== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* ========== BODY ========== */
+body {
+    background-color: #f4f7fa;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ========== HEADER ========== */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #256cca;
+    padding: 20px 40px;
+    border-bottom: 2px solid #0077cc;
+    flex-wrap: wrap;
+}
+
+.logo img {
+    width: 120px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 14px;
+    border-radius: 6px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    background-color: #005fa3;
+}
+
+/* ========== CONTACT HEADER ========== */
+.contact-header {
+    text-align: center;
+    background-color: #e6f3ff;
+    padding: 60px 20px 30px 20px;
+}
+
+.contact-header h1 {
+    font-size: 2.5rem;
+    color: #0077cc;
+    letter-spacing: 1px;
+}
+
+/* ========== CONTACT INFO ========== */
+.contact-info {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.contact-info address {
+    font-style: normal;
+    font-size: 1.1rem;
+    color: #444;
+    margin-bottom: 10px;
+}
+
+.contact-info h3 {
+    margin: 15px 0 8px 0;
+    color: #0077cc;
+}
+
+.contact-info a {
+    color: #0077cc;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: 5px;
+    transition: 0.3s;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+/* ========== CONTACT FORM ========== */
+form {
+    margin: 30px auto;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #fff;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 1rem;
+    outline: none;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+form button {
+    width: 100%;
+    background-color: #0077cc;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    padding: 12px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+form button:hover {
+    background-color: #005fa3;
+}
+
+/* ========== SOCIAL ICONS ========== */
+section div a img {
+    width: 40px;
+    margin: 15px 10px;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease, transform 0.3s ease;
+}
+
+
+
+
+/* ========== FOOTER ========== */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #466def;
+    color: hsl(0, 100%, 99%);
+    border-top: 1px solid #ddd;
+    margin-top: 40px;
+}
+
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 15px 20px;
+        text-align: center;
+    }
+
+    nav {
+        flex-direction: column;
+        margin-top: 10px;
+    }
+
+    nav a {
+        margin: 5px 0;
+    }
+
+    .contact-header h1 {
+        font-size: 2rem;
+    }
+
+    form {
+        width: 90%;
+        padding: 20px;
+    }
+}
